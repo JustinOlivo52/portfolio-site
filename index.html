@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Justin Olivo | Fullstack developer</title>
     <meta name="keywords"  content="[GitHub@ JustinOlivo52], [Justin Olivo], javascript"/>
-    <!-- Style sheets -->
-    <link rel="stylesheet" href="./styles.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="https://kit.fontawesome.com/1dc0c10248.css" crossorigin="anonymous">
+    <!-- Goolge fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles.css"/>
   </head>
   <body>
     <!-- The first sections with a JumboTron -->
     
     <!-- End of jumbotron section -->
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 sticky-top nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Justin's World</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,17 +34,34 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+              <a 
+                class="nav-link active" 
+                aria-current="page" 
+                href="#about-me"
+              >
+                About Me
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a 
+                class="nav-link" 
+                href="#projects"
+              >
+                Projects
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
+              <a 
+                class="nav-link" 
+                href="./JustinOlivoResume.pdf" 
+                target="_blank"
+              >
+                Resume
+              </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -48,7 +69,7 @@
     <!-- Navbar end -->
     <!-- ABout me section -->
     <div class="container" id="about-me">
-      <h2 class="section-title load-hidden">About Me</h2>
+      <h2 class="section-title load-hidden title-text">About Me</h2>
       <div class="row about-wrapper">
         <div class="col-md-6 col-sm-12">
           <div class="about-wrapper_image load-hidden">
@@ -77,7 +98,7 @@
                 target="_blank"
                 href="./JustinOlivoResume.pdf"
               >
-               <button class="btn btn-primary" id="resume">View Resume</button> 
+               <button class="btn btn-success resume-btn shakebtn" id="resume">View Resume</button> 
               </a>
             </span>
           </div>
@@ -87,31 +108,36 @@
     <!-- End of about me section -->
     <!-- Projects section -->
     <section id="projects">
-      <div class="container">
+      <div class="container mt-5">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text title-text">Projects</h2>
           <!-- Project Row Start -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper_text load-hidden">
-                <h3 class="project-wrapper_text-title">Project Title 0</h3>
+                <h3 class="text">Mobile Coffee House</h3>
                 <div>
-                  <p class="mb-4">
-                    Brief description of the project.
+                  <p class="mb-4 text">
+                    A fun little project built during the pandemic.
+                    When the world was shut down one of my favorite places I lost access to was coffee shops.
+                    So I thought hey why not bring the coffee shop to me. 
+                    <br>
+                    This project was built purley using HTML, CSS, and BootStrap.
                   </p>
                 </div>
                 <a
                   role="button"
                   target="_blank"
-                  class="btn btn-secondary"
-                  href="#"
+                  class="btn btn-secondary shakebtn"
+                  href="https://justinolivo52.github.io/coffeeProject/"
                 >
                   See Live
                 </a>
                 <a
                   role="button"
                   target="_blank"
-                  class="btn text-color-main"
+                  class="btn"
+                  href="https://github.com/JustinOlivo52/coffeeProject"
                 >
                   Source Code
                 </a>
@@ -128,29 +154,34 @@
                   >
                     <img
                       alt="Project Image"
-                      class="img-fluid"
-                      src="./profile.JPG" 
+                      class="img-fluid project-img"
+                      src="./mobilecoffee.png" 
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
+          <!-- <br /> -->
           <!-- Next project start -->
-          <div class="row">
+          <div class="row mt-5 mb-5">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper_text load-hidden">
-                <h3 class="project-wrapper_text-title">Project Title 0</h3>
+                <h3 class="project-wrapper_text-title text">What I Learned Today</h3>
                 <div>
-                  <p class="mb-4">
-                    Brief description of the project.
+                  <p class="mb-4 text">
+                    A fun little Fullstack project, where users are able to put fun facts with sources.
+                    When these facts are placed into the system other users would be able to vote on the facts.
+                    With three different types of votes if the fact is a good fact, a mind blowing fact, or false.
+
+                    Technologies used were HTML, Javascript, CSS, and Supabase for the backend database.
                   </p>
                 </div>
                 <a
                   role="button"
                   target="_blank"
-                  class="btn btn-secondary"
-                  href="#"
+                  class="btn btn-secondary shakebtn"
+                  href="https://funfactsilearned.netlify.app/"
                 >
                   See Live
                 </a>
@@ -158,6 +189,7 @@
                   role="button"
                   target="_blank"
                   class="btn text-color-main"
+                  href="https://github.com/JustinOlivo52/what-I-Learned"
                 >
                   Source Code
                 </a>
@@ -174,8 +206,8 @@
                   >
                     <img
                       alt="Project Image"
-                      class="img-fluid"
-                      src="./profile.JPG" 
+                      class="img-fluid project-img"
+                      src="./funfacts.png" 
                     />
                   </div>
                 </a>
@@ -183,7 +215,7 @@
             </div>
           </div>
           <!-- Next Project Start here -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper_text load-hidden">
                 <h3 class="project-wrapper_text-title">Project Title 0</h3>
@@ -227,7 +259,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!--project end -->
         </div>
       </div>
@@ -238,13 +270,13 @@
     <!-- Contact section -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="title-text">Contact</h2>
         <div class="contact-wrapper load-hidden">
           <p class="contact-wrapper_text"> <!--Call to action --></p>
           <a
             role="button"
             target="_blank"
-            class="btn btn-success"
+            class="btn btn-success text shakebtn"
             href="mailto:justinolivo1207@gmail.com"
           >
             Contact Me Here

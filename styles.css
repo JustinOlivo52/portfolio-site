@@ -1,5 +1,68 @@
+body {
+ background-color: #e7e5e4;
+}
+
+.nav {
+    font-family: 'Tilt Warp', cursive, sans-serif;
+}
+
 .profile-img {
     width: 11rem;
     height: 10rem;
     border-radius: 50%;
+}
+
+#about-me {
+    background-color: #a7f3d0;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Tilt Warp', cursive, sans-serif;
+}
+
+.project-img {
+    margin-bottom: 0;
+    border-radius: 5%;
+}
+
+.project-wrapper {
+    margin: auto;
+    padding: 10px;
+}
+
+.title-text {
+    font-family: 'Anton', sans-serif;
+}
+
+.text {
+    font-family: 'Tilt Warp', cursive, sans-serif;
+}
+
+.shakebtn:hover {
+    animation: effect 0.4s infinite;
+}
+
+@keyframes effect {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(-4px) rotate(-4deg);
+    }
+
+    40% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    60% {
+        transform: translateX(4px) rotate(4deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
 }
